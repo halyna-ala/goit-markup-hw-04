@@ -8,7 +8,7 @@
 
 --backgraund: #2F303A; 
 --primery-btn-color: #F5F4FA;
-
+--letter-color: #AFB1B8;
 --card-grid: 30px;
 }
 
@@ -153,7 +153,7 @@ outline: 1px solid mediumvioletred;
     color: var(--primary-text-color);
 }
 .nav-adress .link{
-    content: ;
+    content: '';
     fill: currentColor;
 }
 .address-icon {
@@ -163,9 +163,6 @@ outline: 1px solid mediumvioletred;
 .address-icon:hover,
 .address-icon:focus {
 fill: var(--akcent-color);
-}
-.icon-smart {
-
 }
 
 /* .contact .link:last-child {
@@ -231,6 +228,15 @@ fill: var(--akcent-color);
 width: 270px;
 }
 
+.items .icon::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-image: 
+    url(../images/symbol-defs.svg#icon-antenna);
+    outline: 1px solid crimson;
+}
+
 .feature-list .items +.items {
 margin-left: 30px;
 }
@@ -248,7 +254,7 @@ margin-left: 30px;
 
 .feature-list .title {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
     font-size: 14px; 
     line-height: 1.4;}
@@ -282,7 +288,7 @@ margin-left: 30px;
 .section .link {
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     margin-top: 0;
 
     font-size: 16px; 
@@ -312,13 +318,44 @@ margin-left: 30px;
     background-color: var(--white-footer-60pr);
 }
 
-/* .section-user .link {
+/* social-icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
     margin-bottom: 30px;
-} */
 
-/* .section-user .user + .user {
+}
+.social-icons .icon-s {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* color;: var(--hero-100pr) */
+}
+.social-icons .icon-s + .icon-s {
+    margin-left: 10px;
+}
+
+.social-icons .icon-s:hover,
+.social-icons .icon-s:focus {
+    background-color: var(--akcent-color);
+}
+.social-icons .leter:hover {
+    fill: var(--hero-100pr);
+}
+.section-user .link {
+    margin-bottom: 30px;
+}
+
+.section-user .user + .user {
 margin-left: 30px;
-} */
+}
 
 /* footer */
 
