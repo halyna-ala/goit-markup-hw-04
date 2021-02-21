@@ -142,7 +142,6 @@ outline: 1px solid mediumvioletred;
 
 /* adres */
 .nav-adress .link{
-    color: #757575;
     font-weight: 500; 
     font-size: 14px; 
     line-height: 1.14; 
@@ -151,17 +150,22 @@ outline: 1px solid mediumvioletred;
     justify-content: center;
     cursor: pointer;
     height: 16px;
-outline: 1px solid crimson;
+    color: var(--primary-text-color);
 }
-.nav-adress .link::before {
+.nav-adress .link{
     content: ;
     fill: currentColor;
 }
 .address-icon {
-    width: 16px;
-     height: 12px;
     fill: currentColor;
     margin-right: 10px;
+}
+.address-icon:hover,
+.address-icon:focus {
+fill: var(--akcent-color);
+}
+.icon-smart {
+
 }
 
 /* .contact .link:last-child {
