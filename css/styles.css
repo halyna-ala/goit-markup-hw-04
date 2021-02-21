@@ -158,12 +158,16 @@ outline: 1px solid mediumvioletred;
 /* hero */
 
 .hero {
+    max-width: 1600px;
+    height: 600px;
     padding-top: 199px;
     padding-bottom: 201px;
     margin-top: 0px;
-    margin-bottom: 0px;
-    height: 600px;
-    background: var(--backgraund); 
+    margin-bottom: 0px; 
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
     text-align: center;
 }
 
